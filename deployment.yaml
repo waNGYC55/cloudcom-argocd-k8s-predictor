@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: american-predictor-yw345-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: american-predictor-yw345
+  template:
+    metadata:
+      labels:
+        app: american-predictor-yw345
+    spec:
+      containers:
+        - name: american-predictor-yw345
+          image: wangyc55/cloud_cmputing_dockerimage:0.2
+          ports:
+            - containerPort: 5011

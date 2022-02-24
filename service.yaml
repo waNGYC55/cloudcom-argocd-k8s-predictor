@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: american-predictor-yw345-service
+spec:
+  selector:
+    app: american-predictor-yw345
+  ports:
+    - protocol: TCP
+      port: 5011
+      targetPort: 5000
