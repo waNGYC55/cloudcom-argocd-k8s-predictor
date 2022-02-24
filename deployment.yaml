@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: american-predictor-yw345
-          image: wangyc55/cloud_cmputing_dockerimage:0.2
+          image: wangyc55/cloud_cmputing_dockerimage:0.3
           ports:
             - containerPort: 5011
